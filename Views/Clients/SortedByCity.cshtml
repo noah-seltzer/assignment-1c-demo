@@ -1,0 +1,77 @@
+﻿@model List<IGrouping<string, Client>>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    @foreach (var item in Model) {
+        <p>@item.Key</p>
+        <p>@item.ToList().Count()</p>
+    }
+@*     <thead> *@
+@*         <tr> *@
+@*             <th> *@
+@*                 @Html.DisplayNameFor(model => model.Balance) *@
+@*             </th> *@
+@*             <th> *@
+@*                 @Html.DisplayNameFor(model => model.DateOfBirth) *@
+@*             </th> *@
+@*             <th> *@
+@*                 @Html.DisplayNameFor(model => model.Photo) *@
+@*             </th> *@
+@*             <th> *@
+@*                 @Html.DisplayNameFor(model => model.Name) *@
+@*             </th> *@
+@*             <th> *@
+@*                 @Html.DisplayNameFor(model => model.Address) *@
+@*             </th> *@
+@*             <th> *@
+@*                 @Html.DisplayNameFor(model => model.Services) *@
+@*             </th> *@
+@*             <th></th> *@
+@*         </tr> *@
+@*     </thead> *@
+@*     <tbody> *@
+@*         @foreach (var item in Model) { *@
+@*             <tr> *@
+@*                 <td> *@
+@*                     @Html.DisplayFor(modelItem => item.Balance) *@
+@*                 </td> *@
+@*                 <td> *@
+@*                     @Html.DisplayFor(modelItem => item.DateOfBirth) *@
+@*                 </td> *@
+@*                 <td> *@
+@*                     @{ *@
+@*                         string imageSrc = "https://placehold.co/200"; *@
+@*                         if (item.Photo != null) { *@
+@*                             string base64String = Convert.ToBase64String(item.Photo, 0, item.Photo.Length); *@
+@*                             imageSrc = "data:image/jpg;base64," + base64String; *@
+@*                         } *@
+@*                     } *@
+@*                     <img id="img" width="200" height="200" src="@imageSrc" alt="" /> *@
+               
+@*             </td> *@
+@*             <td> *@
+@*                 @Html.DisplayFor(modelItem => item.Name) *@
+@*             </td> *@
+@*             <td> *@
+@*                 @Html.DisplayFor(modelItem => item.Address) *@
+@*             </td> *@
+@*             <td> *@
+@*                 @Html.DisplayFor(modelItem => item.Services) *@
+@*             </td> *@
+@*             <td> *@
+@*                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> | *@
+@*                 <a asp-action="Details" asp-route-id="@item.ID">Details</a> | *@
+@*                 <a asp-action="Delete" asp-route-id="@item.ID">Delete</a> *@
+@*             </td> *@
+@*         </tr> *@
+@* } *@
+    </tbody>
+</table>
