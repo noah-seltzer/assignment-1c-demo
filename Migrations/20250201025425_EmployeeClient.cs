@@ -11,8 +11,7 @@ namespace MVCSampleApp.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropTable(
-                name: "ClientServices");
+
         }
 
         /// <inheritdoc />
