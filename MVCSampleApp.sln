@@ -5,8 +5,6 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCSampleApp", "MVCSampleApp.csproj", "{F4F76E0E-A133-4EC7-9FAD-6B266FB274B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvcselenium", "..\mvcselenium\mvcselenium.csproj", "{A498CAEC-90D6-47CF-B4A7-9CC14829E193}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
