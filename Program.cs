@@ -20,7 +20,7 @@ using (var scope = app.Services.CreateScope())
     var dbContext = scope.ServiceProvider.GetRequiredService<ClientContext>();
     //dbContext.Database.EnsureCreated();
     //Console.WriteLine("Running Migrations");
-    //dbContext.Database.Migrate();
+    dbContext.Database.Migrate();
 }
 
 // Configure the HTTP request pipeline.
